@@ -22,6 +22,14 @@
 
 ---
 
+## 🚨 **알람**
+| CPU 알람 | 메모리 알람 |Mysql|
+|:------:|:------:|:------:|
+|<img src="https://github.com/user-attachments/assets/a6bd628c-a6fc-4ce2-90ba-e85d42ecb1ed" width="250"> | <img src="https://github.com/user-attachments/assets/a4605223-c362-4812-bb06-5e7e22a37f4a" width="250"> | <img src="https://github.com/user-attachments/assets/fa824902-a506-439c-b446-35c47d2f7d42" width="250">|
+
+
+
+
 ## 📌 **구성 과정**
 1. `manager` 새로운 유저 계정 생성 및 로그 디렉토리 생성
 2. `process_monitor.sh` (Nginx) & `process_monitor_mysql.sh` (MySQL) 스크립트 작성 및 실행 권한 부여
