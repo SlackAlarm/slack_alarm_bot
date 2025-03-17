@@ -53,6 +53,18 @@ sudo adduser manager
 id manager
 sudo usermod -aG sudo manager
 
+# nginx 설치 및 확인
+sudo apt update
+sudo apt install nginx
+sudo systemctl start nginx
+sudo systemctl status nginx
+
+# mysql 설치 및 확인
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl start mysql
+sudo systemctl status mysql
+
 # 로그 저장을 위한 디렉토리 및 파일 생성
 sudo mkdir -p /var/log/manager_logs
 sudo touch /var/log/manager_logs/process_monitor.log
