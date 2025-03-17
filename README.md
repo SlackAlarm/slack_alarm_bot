@@ -1,6 +1,12 @@
 # 📀 **Slack_Alarm_Bot**
 
-이 문서는 **nginx** 및 **MySQL** 프로세스의 리소스를 모니터링하고, 임계치를 초과할 경우 **Slack**으로 자동 알람을 보내는 시스템을 구성하는 과정입니다.
+**nginx** 및 **MySQL** 프로세스의 리소스를 모니터링하고, 임계치를 초과할 경우 **Slack**으로 자동 알람을 보내는 시스템을 구성하였습니다.
+
+---
+## 👨‍👨‍👦‍👦 팀원 소개  
+| <img src="https://github.com/wns5120.png" width="200px"> | <img src="https://github.com/Aunsxm.png" width="200px"> | <img src="https://github.com/andytjdqls.png" width="200px"> |
+| :---: | :---: | :---: |
+| [유호준](https://github.com/wns5120) | [장수현](https://github.com/Aunsxm) | [이성빈](https://github.com/andytjdqls) |
 
 ---
 
@@ -206,10 +212,3 @@ wrk -t4 -c1000 -d100s http://localhost/
 | Failover 시스템 구축 | 장애 발생 시 백업 서버로 트래픽 자동 전환 | 서비스 연속성 유지 |
 | 백업 및 복구 자동화 | MySQL 데이터 백업 + 주기적인 스냅샷 저장 | 장애 발생 시 신속한 복구 가능 |
 
-
-
----
-## 👨‍👨‍👦‍👦 팀원 소개  
-| <img src="https://github.com/wns5120.png" width="200px"> | <img src="https://github.com/Aunsxm.png" width="200px"> | <img src="https://github.com/andytjdqls.png" width="200px"> |
-| :---: | :---: | :---: |
-| [유호준](https://github.com/wns5120) | [장수현](https://github.com/Aunsxm) | [이성빈](https://github.com/andytjdqls) |
