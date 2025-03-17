@@ -186,6 +186,19 @@ wrk -t4 -c1000 -d100s http://localhost/
 | **Nginx의 모든 Worker 프로세스의 CPU 및 메모리 사용량 합산 필요** | `pgrep`로 찾은 각각의 PID 사용량을 개별적으로 체크해야 함 | `for PID in $(pgrep -f "nginx: worker process"); do ... done` 루프를 사용하여 CPU 및 메모리 사용량을 모두 합산 |
 | **Nginx 또는 MySQL이 재시작될 때 PID 변경됨** | 프로세스가 재시작될 때마다 새로운 PID가 할당됨 | 매번 `pgrep`을 실행하여 현재 실행 중인 프로세스를 다시 감지하도록 스크립트 수정 |
 
+---
+
+## 🪄 앞으로 추가할 기능
+| 기능 | 설명 | 기대 효과 |
+|------|------|----------|
+| ELK Stack 연동 | Elasticsearch, Logstash, Kibana를 이용한 로그 시각화 | 장애 발생 원인 분석 및 실시간 대시보드 제공 |
+| MySQL 쿼리 성능 모니터링 | mysqld_exporter와 Slow Query Log 분석 | 비효율적인 쿼리 탐색 및 최적화 |
+| Nginx 상태 점검 API 연동 | stub_status 모듈을 활용하여 Nginx 상태 조회 | Active Connections, Request 처리량 등 모니터링 가능 |
+| Slack 알람 세분화 | 경고 수준별 알람 (INFO, WARNING, CRITICAL) | 운영자의 불필요한 알람 피로도를 줄이고, 중요한 알람만 즉각 대응 가능 |
+| Failover 시스템 구축 | 장애 발생 시 백업 서버로 트래픽 자동 전환 | 서비스 연속성 유지 |
+| 백업 및 복구 자동화 | MySQL 데이터 백업 + 주기적인 스냅샷 저장 | 장애 발생 시 신속한 복구 가능 |
+
+
 
 ---
 ## 👨‍👨‍👦‍👦 팀원 소개  
